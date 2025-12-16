@@ -1,0 +1,152 @@
+/*
+ Theme Name: Pulse Demo Theme
+ Theme URI: https://dmytrocodes.netlify.app
+ Author: Dmytro Savka
+ Description: Lightweight custom theme built for portfolio demo – component-based, ACF-ready.
+ Version: 1.0
+*/
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    margin: 0;
+    color: #111827;
+    background: #f3f4f6;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* Header */
+
+.site-header {
+    background: #111827;
+    color: #f9fafb;
+    padding: 1rem 0;
+}
+
+.site-header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.site-title {
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+.main-nav ul {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-nav a {
+    font-size: 0.95rem;
+    opacity: 0.85;
+}
+
+.main-nav a:hover {
+    opacity: 1;
+}
+
+/* Hero */
+
+.hero {
+    padding: 4rem 0 3rem;
+    background: linear-gradient(135deg, #111827, #1f2937);
+    color: #f9fafb;
+}
+
+.hero-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 2fr) minmax(0, 1.5fr);
+    gap: 2.5rem;
+    align-items: center;
+}
+
+.hero-title {
+    font-size: clamp(2rem, 4vw, 2.8rem);
+    margin-bottom: 1rem;
+}
+
+.hero-subtitle {
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+.hero-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: #f97316;
+    color: #111827;
+    padding: 0.75rem 1.4rem;
+    border-radius: 999px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+}
+
+.hero-cta:hover {
+    background: #fb923c;
+}
+
+/* Feature cards */
+
+.section {
+    padding: 3rem 0;
+}
+
+.section-title {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.card-grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .card-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+.card {
+    background: #ffffff;
+    border-radius: 0.75rem;
+    padding: 1.25rem;
+    box-shadow: 0 10px 25px rgba(15, 23, 42, 0.05);
+}
+
+.card-title {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.card-text {
+    font-size: 0.9rem;
+    color: #4b5563;
+}
+
+/* Footer */
+
+.site-footer {
+    padding: 1.5rem 0;
+    font-size: 0.85rem;
+    color: #6b7280;
+    text-align: center;
+}
